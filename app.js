@@ -33,6 +33,7 @@ function assignVars() {
     fortuneVal = getRand(fortunes);
     activityVal = getRand(activities);
     updateVars();
+    console.log(`Today's looking: ${fortunes[fortuneVal].word} - Here's an inspirational quote: "${quotes[quoteVal]}" - Maybe try ${activities[activityVal]}`)
 }
 
 //Call assignVars to have starting value
