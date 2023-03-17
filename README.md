@@ -15,4 +15,4 @@ This method provides a mock website containing the message with a reset function
 This method does not require local hosting and will provide a similarly structured message
 
 ## How it works
-The program selects a random word or phrase from three different arrays and then plugs those values into a function that returns a message that can be read by the user.
+The program selects a random word or phrase from three different arrays and then plugs those values into a function that returns a message that can be read by the user. The Reset button will provide a new message.
