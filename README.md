@@ -3,12 +3,12 @@
 This is a program with an outlined goal of providing the user with a randomized message! 
 
 ## How to use
-###Method 1
+### Method 1
 1. Download files
 2. Host the index.html locally to view
 This will allow you to view the information as a simple website 
 
-###Method 2
+### Method 2
 1. Download files
 2. Open index.html in an internet browser
 3. Open internet browser's console to view message
