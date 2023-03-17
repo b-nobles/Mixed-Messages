@@ -23,8 +23,16 @@ p {
     max-width: 500px;
 }
 
-#buttons {
-    display: inline;
+button {
+    border-radius: 5px;
+    border: 0;
+    height: 30px;
+    width: 100px;
+    font-size: large;
+    font-family: 'Sono', sans-serif;
+    font-style: bold;
+    background-color: crimson;
+    color: white;
 }
 
 #quote {
