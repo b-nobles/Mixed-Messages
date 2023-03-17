@@ -1,14 +1,29 @@
 //Import the arrays from phrases folder
-const {quotes, fortunes, activities} = require('./phrases')
+import {quotes, fortunes, activities} from '/phrases.js'
+
+//Access HTML objects to manipulate
+const quoteText = document.getElementById('quote');
+const fortuneText = document.getElementById('fortune');
+const activityText = document.getElementById('activity')
 
 //Create the randomizing function that will be reused
-getRand = (arr) => Math.floor(Math.random() * arr.length)
+const getRand = (arr) => Math.floor(Math.random() * arr.length)
 
+//Initialize variables that will that are temporary but can be reused
+let quoteVal = getRand(quotes);
+let fortuneVal = getRand(fortunes);
+let activityVal = getRand(activities);
+
+//Create function that will change website text appropriately
+function updateVars() {
 //Generate the fortune first
-let fortune = `Today's looking: ${fortunes[getRand(fortunes)]}`
-
+fortuneText.innerHTML = fortunes[fortuneVal].word
+//Give the fortune an appropriate color
+fortuneText.style.color = fortunes[fortuneVal].color
 //Generate the quote second
-let quote = quotes[getRand(quotes)]
-
+quoteText.innerHTML = quotes[quoteVal]
 //Generate the activity third
-let activity = `Maybe try ${activities[getRand(activities)]}`
+activityText.innerHTML = `Maybe try ${activities[activityVal]}`
+}
+
+updateVars();
